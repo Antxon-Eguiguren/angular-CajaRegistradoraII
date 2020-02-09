@@ -1,0 +1,38 @@
+.seccion-pedido {
+    margin-top: 5%;
+}
+
+.seccion-pedido h3 {
+    margin-bottom: 5%;
+}
+
+.pedido {
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    background-color: salmon;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);  
+    font-size: 1.2em;
+    padding: 1% 0%;
+    margin: 1% 0%;
+}
+
+.icono {
+    cursor: pointer;
+    color: white;
+}
+
+.icono:hover {
+    color: black;
+}
+
+.textos {
+    text-align: start;
+}
+
+.total h3 {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 25px;
+    text-align: center;
+}

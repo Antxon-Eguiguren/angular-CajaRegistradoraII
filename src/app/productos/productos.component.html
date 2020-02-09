@@ -1,0 +1,17 @@
+<div class="productos">
+    <h3>{{titulo}}</h3>
+
+    <div class="row">
+
+        <div class="col-4 col-md-2" *ngFor="let producto of productos" (click)="manejarClick(producto)">
+
+            <div class="producto">
+                <p>{{producto.nombre}}</p>
+                <p>{{producto.precio}}€</p>
+                <img class="img-fluid" src="{{producto.foto}}" width="60" height="60">
+            </div>
+
+        </div>
+
+    </div>
+</div>

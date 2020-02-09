@@ -1,0 +1,30 @@
+<div class="seccion-pedido">
+    <h3>PEDIDO</h3>
+    <div class="row no-gutters pedido" *ngFor="let producto of arrProductosSeleccionadosPedido">
+
+        <div class="col-1">
+
+            <div class="icono">
+                <i (click)="manejarClickBorrado(producto)">
+                    <fa-icon [icon]="iconoBorrar"></fa-icon>
+                </i>
+            </div>
+        </div>
+
+        <div class="col-11">
+            <div class="items">
+                [{{ producto.nombre }}] --- {{producto.precio}} € * {{ producto.cantidad }} uds =
+                {{ producto.precio * producto.cantidad }} €
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row total">
+
+        <div class="col-12">
+            <h3>TOTAL = {{calcularTotal()}} €</h3>
+        </div>
+
+    </div>
+</div>
